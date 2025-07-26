@@ -21,7 +21,11 @@ def linear_regression(
         num_rooms = features[i]
         price = labels[i]
         price_per_room, base_price = square_trick(
-            price_per_room, base_price, num_rooms, price, learning_rate=learning_rate
+            price_per_room,
+            base_price,
+            num_rooms,
+            price,
+            learning_rate=learning_rate
         )
 
     return price_per_room, base_price
